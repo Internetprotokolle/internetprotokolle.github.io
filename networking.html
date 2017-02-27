@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Netzwerke</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="js/script.js"></script> 
+</head>
+<body>
+    <header>
+        <h1>Netzwerke</h1>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="networking.html">Netzwerke</a></li>
+            <li><a href="internet.html">Internet Grundlagen</a></li>
+            <li><a href="clientserver.html">Client-Server-Architektur</a></li>
+        </ul>
+    </header>
+    <div id="content">
+        <p>
+            <!-- Zusammenfassung -->
+            Ein Netzwerk ist ein Zusammenschluss von verschiedenen netzwerkfähigen Geräten.
+            Deren Anordnung in Netzwerken nennt man <a href="#topologie">Topologie</a>. 
+            Damit Geräte kommunizieren können gibt es verschiedene Schichten, die sich verschiedene Aufgaben bei der Kommunikation teilen.
+            Diese Schichten werden im <a href="#osi_modell">OSI-Modell</a> definiert.
+        </p>
+        
+        <p>
+            <h3 id="topologie">Topologie</h3>
+            Die Topologie beschreibt die physikalische Anordnung von Geräten in einem Netzwerk. 
+            Es gibt verschiedene Möglichkeiten der Anordnung, am häufigsten  werden die <a href="#topologie_vermascht">vermaschten</a>, 
+            oder <a href="#topologie_stern">Stern-</a>Formationen benutzt.
+            <br/>
+            <ul class="images-left">
+                <li id="topologie_vermascht">
+                    <h4>Vermascht</h4>
+                    <img src="images/Netzwerktopologie_Vermascht.png" alt="Vermaschtes Netzwerk" title="Vermaschtes Netzwerk">
+                    Am häufigsten  kommt die vermaschte Formation zum Einsatz. Das bekannteste Beispiel ist dafür das Internet.
+                    Der Vorteil von einem vermaschten Netz ist, dass ein Teil ausfallen kann und es immer noch funktioniert.
+                    Wenn jedes Gerät mit allen anderen verbunden ist, nennt man diese Formation auch vollvermaschtes Netz.
+                </li>
+                <li id="topologie_stern">
+                    <h4>Stern-Topologie</h4>
+                    <img src="images/Netzwerktopologie_Stern.png" alt="Sternförmiges Netzwerk" title="Sternförmiges Netzwerk">
+                    Auch häufig wird die Stern-Topologie benutzt. Diese kommt überwiegend bei Heimnetzwerken zum Einsatz.
+                    Jedes Gerät hat eine direkte Verbindung zu dem Switch oder Hub, oft ist die ein Router. 
+                    Im Gegensatz zum vermaschten Netz wird kein komplexes Routing benötigt, aber dafür fällt das komplette
+                    Netz aus, wenn der Switch oder Hub ausfällt.
+                </li>
+                <li id="topologie_ring">
+                    <h4>Ring-Topologie</h4>
+                    <img src="images/Netzwerktopologie_Ring.png" alt="Ringförmiges Netzwerk" title="Ringförmiges Netzwerk">
+                    In diesem Fall werden die Geräte im Netz hintereinander in Form eines Ringes zusammengeschlossen.
+                    Die Vorteile des Typens sind dass immer eine konstante Übertragungsrate besteht. Die Nachteile des Netzwerkes
+                    sind die teuren Kosten und das hohe Ausfallrisiko.
+                </li>
+                <li id="topologie_bus">
+                    <h4>Bus-Topologie</h4>
+                    <img src="images/Netzwerktopologie_Bus.png" alt="Netzwerk mit Bus-Struktur" title="Netzwerk mit Bus-Struktur">
+                    Bei der Bus-Technologie werden mehrere Geräte an ein Kabel angeschlossen, dies bringt nur geringe Kosten
+                    mit sich. Wiederrum hat das Netzwerk ein noch höheres Ausfallrisiko, als ein Ring-Netzwerk. Zudem
+                    muss sichergestellt werden, dass Daten am Ende des Datenkabels nicht reflektiert werden und dass nur
+                    ein Computer zur gleichen Zeit Daten sendet. Deswegen wird diese Technologie heute nicht mehr so häufig
+                    eingesetzt.
+                </li>
+
+            </ul>
+        </p>
+
+        <p>
+            <h3 id="osi_modell">OSI-Modell</h3>
+            Das OSI-Modell ist ein Beispiel-Modell für Protokolle und deren Arbeitsbereiche. 
+            Das Modell arbeitet mit verschiedenen Schichten, um den Arbeitsbereich von Protokollen einzugrenzen.
+            Insgesamt gibt es 7 Ebenen, wobei die Ebenen mit aufsteigender Nummer immer weiter in die Richtung des Computerprogrammes gehen.
+            <table id="osi-table">
+                <tr>
+                    <th>Ebene</th>
+                    <th>Name</th>
+                    <th>Zweck</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bitübertragung</td>
+                    <td>Diese Schicht ist dafür zuständig Verbindungen aufrechtzuerhalten und das Senden von Bits dadurch zu ermöglichen</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sicherung</td>
+                    <td>
+                        Die 2. Schicht ist für die Verifizierung und Überprüfung der Pakete entwickelt worden. Es werden z.B. 
+                        Prüfsummen den übertragenen Bits hinzugefügt, um später die Bits auf Vollständigkeit überprüfen zu können
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Vermittlung-/Paket</td>
+                    <td>
+                        Die 3. Schicht ist für das Routing der Pakete zuständig. D.h. sie muss Pakete über mehrere Knotenpunkte zum 
+                        Empfänger vermitteln.
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Transport</td>
+                    <td>
+                        Die 4. Schicht ermöglicht die Benutzung von Ports und verhindert einen Stau von Paketen.
+                        Durch wird sie eine Ende-zu-Ende-Verbindung aufgebaut.
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sitzung</td>
+                    <td>
+                        Die 5. Schicht versucht Zusammenbrüche einer Verbindung zu verhindern. Falls doch bietet sie Möglichkeiten 
+                        die Verbindung schnell und möglichst ohne Verlust wieder aufzubauen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Darstellung</td>
+                    <td>
+                        Die 6. Schicht verschlüsselt und komprimiert die Daten. Sie agiert auch als Übersetzer, wenn
+                        unterschiedliche System miteinander kommunizieren.
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Anwendungen</td>
+                    <td>
+                        Die 7. Schicht steht den Programmen zum Datenaustausch zur Verfügung. Die meisten Protokolle stützen 
+                        sich auf diese Schicht (z.B. <a href="https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> 
+                        oder <a href="https://de.wikipedia.org/wiki/File_Transfer_Protocol">FTP</a>)
+                    </td>
+                </tr>
+            </table>
+			Das Schichten-Modell funktioniert zusammen mit dem <a href="internet.html#protocolstack">Protokoll Stack</a>, der 
+            passend zu den Schichten Informationen auf IP-Frames oder Pakete anfügt.
+			<!-- <h4>Anwendungsbeispiel</h4>
+			Im folgenden Beispiel wird die Funktion der einzelnen Schichten in Verbindung mit dem HTTP-Protokoll verdeutlicht.
+			Auf der 1.Schicht stellt anfragende Computer eine Verbindung über das LAN-Kabel mit einem Switch her. Durch die 2.Schicht werden
+			zusätzliche Informationen, mit denen der Switch überprüfen kann ob, alle Daten korrekt angekommen sind, gesendet. Die 3. Schicht
+			sendet Daten an den Router die Informationen enthalten, wohin die Bits, die an den Switch gesendet wurden, weiter gesendet werden
+			sollen. Die 4. Schicht ist zur Stauvermeidung entwickelt worden und sendet Informationen an welchen "Port" (eine Zuordnungnummer auf
+			einem Rechner, die den Netzwerkverkehr aufteilt) die Bits gesendet werden sollen. Die 5.Schicht versucht eine Verbindungen zwischen
+			dem Client und Server aufrecht zu erhalten und alle Daten fehlerfrei zu senden. Durch die 6. Schicht die Daten komprimiert und gff. 
+			verschlüsselt. Die Programme auf dem Computer haben dann schließlich Zugriff auf die 7. Schicht, mit der sie Daten versenden und 
+			empfangen können. Im Beispiel von einer HTTP-Anfrage werden auf der 7. Schicht die eigentlichen HTTP-Daten übertragen. -->
+        </p>
+
+        <p>
+            <h3 id="komponenten">Komponenten</h3>
+            Dies sind die wesentlichen Komponenten, die für die Funktionalität eines Netzwerkes, nötig sind.
+            Natürlich sind auch noch einfachere physikalische Komponenten nötig z.B. ein LAN-Kabel.
+            <ul style="list-style: none">
+                <li>
+                    <h4 id="komponenten_router">Router</h4>
+                    Ein Router verbindet zwei Netzwerke miteinander. Häufig ist eins der Netzwerke ein privates Netzwerk. 
+                    Der Router ist dafür zuständig Pakete zwischen diesen beiden Netzwerken zu vermitteln. Da oft Geräte
+                    in privaten Netzwerken eine bzw. keine öffentliche IP-Adresse haben muss ein Router mithilfe der
+                    <a href="https://de.wikipedia.org/wiki/Netzwerkadress%C3%BCbersetzung">Netzwerkadressübersetzung</a>
+                    die Pakete vermitteln.
+                </li>
+                <li>
+                    <h4>Switch / Wireless Access Point</h4>
+                    Switches und Wireless Access Point haben den allgemein gleichen Zweck: Mehrere Geräte in ein Netzwerk zu integrieren.
+                    Ein wesentlicher Unterschied ist aber, dass an einen Switch LAN-Kabel angeschlossen werden und dieser die Frames an
+                    nur an das jeweilige Kabel weiterleitet. Ein Wireless Access Point sendet dagegen die Daten drahtlos. 
+                </li>
+                <li>
+                    <h4>Gateway</h4>
+                    Ein Gateway dient als Übersetzer für verschiedene Netzwerkprotokolle. Er wurde vorrangig während der Entstehungszeit des
+                    Internets eingesetzt, da heutzutage fast immer das IP-Protokoll benutzt wird. Man findet heute noch häufig ein 
+                    "Standardgateway", dieses leitet Anfragen, die in ein anderes Netzwerk gehören, um.
+                </li>
+            </ul>
+        </p>
+        <!--
+            https://de.wikipedia.org/wiki/Rechnernetz
+            https://de.wikipedia.org/wiki/Topologie_%28Rechnernetz%29
+            https://de.wikipedia.org/wiki/OSI-Modell
+            https://de.wikipedia.org/wiki/Gateway_(Informatik)
+            https://de.wikipedia.org/wiki/Router
+            https://de.wikipedia.org/wiki/Switch_(Netzwerktechnik)
+            https://de.wikipedia.org/wiki/Wireless_Access_Point#802.11-Access-Points
+        -->
+    </div>
+    
+</body>
+</html>

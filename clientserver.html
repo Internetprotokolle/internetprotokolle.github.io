@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Client-Server-Architektur</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Client-Server-Architektur</h1>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="networking.html">Netzwerke</a></li>
+            <li><a href="internet.html">Internet Grundlagen</a></li>
+             <li><a href="clientserver.html">Client-Server-Architektur</a></li>
+        </ul>
+    </header>
+    <div id="content">
+        Die Client-Server-Architektur beschreibt den Austausch von Daten zwischen einem anfragenden Client und einem antworteten Server.
+        <p>
+            <img src="images/ClientServer.svg" alt="Client-Server-Architektur" style="width:45%;float:right;"/>
+            Der Client sendet eine Anfrage an den Server. Diese wird über das Internet zu dem Server geschickt. Dieser verarbeitet
+            die Anfrage und generiert eine Antwort, die an den Server geschickt. Damit sich Server und Client verstehen gibt es 
+            Protokolle. Diese definieren, wie die Kommunikation abläuft. Als Dienst wird die Funktion des Servers benannt.
+        </p>
+        <h3 id="protocols">Bekannte Dienste und deren Protokolle</h3>
+        <table class="nobordertable" id="protocol-table">
+            <tr>
+                <th>Dienst</th>
+                <th>Protokoll</th>
+                <th>Funktion</th>
+            </tr>
+            <tr>
+                <td>Namensauflösung</td>
+                <td>DNS</td>
+                <td>Auflösen von Domain-Namen zu IP-Adressen</td>
+            </tr>
+            <tr>
+                <td>World Wide Web</td>
+                <td>HTTP, HTTPS</td>
+                <td>Übertragen von Internetseiten</td>
+            </tr>
+            <tr>
+                <td>E-Mail</td>
+                <td>SMTP, POP3, IMAP</td>
+                <td>Übertragen von Internetseiten</td>
+            </tr>
+            <tr>
+                <td>Dateiübertragung</td>
+                <td>FTP, FTPS, SFTP</td>
+                <td>Übertragen von Dateien</td>
+            </tr>
+            <tr>
+                <td>Konsolenzugriff</td>
+                <td>Telnet, SSH</td>
+                <td>Zugriff auf entfernte Konsole</td>
+            </tr>
+            <tr>
+                <td>Internetchat</td>
+                <td>IRC, XMPP</td>
+                <td>Chatten über das Internet</td>
+            </tr>
+            <tr>
+                <td>Zeitsynchronisation</td>
+                <td>NTP</td>
+                <td>Synchronisation der Systemzeit mit einem Server</td>
+            </tr>
+        </table>
+        <!-- OSI-Modell Implementierung -->
+        <h3 id="security">Sicherheit</h3>
+        <p>
+            Standardmäßig sind Verbindungen im Internet unverschlüsselt. Dies ermöglicht Angreifern (Hackern oder auch Staaten) sensible
+            Daten auszulesen und diese im schlimmsten Fall zu modifizieren. Dagegen wurden einige Verfahren entwickelt. 
+            Das Weitverbreitetste davon ist <a href="https://de.wikipedia.org/wiki/Transport_Layer_Security">TLS</a>. 
+            Dieses tauscht bei der Aufbau der Verbindung Schlüssel aus, die mithilfe von
+            Zertifikaten überprüft werden. Sollten die Schüssel akzeptiert werden, wird eine verschlüsselte Verbindung aufgebaut und
+            es ist möglich Daten zu übertragen. Von vielen Protokollen gibt es eine Version in Verbindung mit TLS. 
+            Das bekannteste davon ist HTTPS, mit diesem es möglich verschlüsselt Webseiten aufzurufen.
+        </p>
+    </div>
+    
+    <!-- 
+        https://de.wikipedia.org/wiki/Internetdienst
+    -->
+
+</body>
+</html>

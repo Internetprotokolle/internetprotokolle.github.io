@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 1600 450"
+   height="450"
+   width="1600">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-602.36216)"
+     id="layer1">
+    <g
+       transform="matrix(16.666667,0,0,16.666667,1138.2272,632.36215)"
+       id="g4150"
+       style="fill:#000000">
+      <path
+         style="fill:none"
+         d="M 0,0 24,0 24,24 0,24 Z"
+         id="path4140" />
+      <path
+         d="m 2,20 20,0 0,-4 -20,0 0,4 z m 2,-3 2,0 0,2 -2,0 0,-2 z M 2,4 2,8 22,8 22,4 2,4 Z M 6,7 4,7 4,5 6,5 6,7 Z m -4,7 20,0 0,-4 -20,0 0,4 z m 2,-3 2,0 0,2 -2,0 0,-2 z"
+         id="path4142" />
+    </g>
+    <g
+       transform="matrix(13.785714,0,0,13.785714,839.84631,598.6359)"
+       id="g4166"
+       style="fill:#000000">
+      <path
+         style="fill:none"
+         d="M 0,0 24,0 24,24 0,24 Z"
+         id="path4156" />
+      <path
+         d="m 12,4 -1.41,1.41 5.58,5.59 -37.413524,0 0,2 L 16.17,13 10.59,18.59 12,20 20,12 Z"
+         id="path4158" />
+    </g>
+    <g
+       transform="matrix(16.666667,0,0,16.666667,88.126938,632.36215)"
+       id="g4182"
+       style="fill:#000000">
+      <path
+         style="fill:none"
+         d="M 0,0 24,0 24,24 0,24 Z"
+         id="path4172" />
+      <path
+         d="M 4,6 22,6 22,4 4,4 C 2.9,4 2,4.9 2,6 l 0,11 -2,0 0,3 14,0 0,-3 L 4,17 4,6 Z m 19,2 -6,0 c -0.55,0 -1,0.45 -1,1 l 0,10 c 0,0.55 0.45,1 1,1 l 6,0 c 0.55,0 1,-0.45 1,-1 L 24,9 C 24,8.45 23.55,8 23,8 Z m -1,9 -4,0 0,-7 4,0 0,7 z"
+         id="path4174" />
+    </g>
+    <g
+       transform="matrix(-13.785714,0,0,-13.785714,821.60936,1066.8566)"
+       id="g4166-8"
+       style="fill:#000000">
+      <path
+         style="fill:none"
+         d="M 0,0 24,0 24,24 0,24 Z"
+         id="path4156-3" />
+      <path
+         d="m 12,4 -1.41,1.41 5.58,5.59 -37.413524,0 0,2 L 16.17,13 10.59,18.59 12,20 20,12 Z"
+         id="path4158-1" />
+    </g>
+    <text
+       id="text4209"
+       y="651.8739"
+       x="217.14285"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:Roboto,Open Sans,sans-serif;-inkscape-font-specification:'Roboto, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4213"
+         y="651.8739"
+         x="217.14285">Client</tspan></text>
+    <text
+       id="text4217"
+       y="651.8739"
+       x="1255.7144"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:Roboto,Open Sans,sans-serif;-inkscape-font-specification:'Roboto, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4221"
+         y="651.8739"
+         x="1255.7144">Server</tspan></text>
+    <text
+       id="text4225"
+       y="665.2193"
+       x="577.71429"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:Roboto,Open Sans,sans-serif;-inkscape-font-specification:'Roboto, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="665.2193"
+         x="577.71429"
+         id="tspan4227">fragt an </tspan><tspan
+         id="tspan4229"
+         y="727.7193"
+         x="577.71429">(sendet Request)</tspan></text>
+    <text
+       id="text4225-1"
+       y="969.4848"
+       x="694.8999"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:125%;font-family:Roboto,Open Sans,sans-serif;-inkscape-font-specification:'Roboto, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4252"
+         y="969.4848"
+         x="694.8999">antwortet</tspan><tspan
+         id="tspan4229-5"
+         y="1031.9849"
+         x="694.8999">(sendet Response)</tspan></text>
+  </g>
+</svg>

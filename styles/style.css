@@ -1,0 +1,84 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header li {
+    display: inline-block;
+    margin: 2.5px 5px;
+    font-size: 20px;
+}
+
+a {
+    color: black;
+}
+
+a::visited {
+    color: black
+}
+
+#content {
+    max-width: 1280px;
+    margin: 5px auto;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+h4 {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.images-left li {
+    overflow: auto;
+}
+
+.images-left img {
+    float: right;
+    height: 120px;
+}
+
+#osi-table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 1em 2.5%;
+}
+
+#osi-table th {
+    text-align: center;
+}
+
+#osi-table tr, th, td {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#osi-table tr td:first-child {
+    text-align: center;
+}
+
+#osi-table tr {
+    height: 46px;
+}
+
+.nobordertable {
+    border-collapse: collapse;
+}
+
+#protocol-table th, td {
+    padding: 2.5px 5px;
+}
+
